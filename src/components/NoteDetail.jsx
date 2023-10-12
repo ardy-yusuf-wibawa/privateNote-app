@@ -1,5 +1,5 @@
 import React from 'react'
-import Card from '../layouts/Card'
+import Card from '../UI/Card'
 import NoteDate from './NoteDate'
 import { callButton } from './NoteButton'
 import { openForm, undoArchived, deleteNote, savedArchived } from '../utils/Toast'
