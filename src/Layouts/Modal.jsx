@@ -1,7 +1,7 @@
 import React from 'react'
 import { closeForm } from '../utils/Toast'
 
-const Modal = ({ modalInput, onClose, children, modalEdit, onCloseEdit }) => {
+function Modal({ modalInput, onClose, children, modalEdit, onCloseEdit }) {
   const handleModal = () => {
     closeForm()
     onClose(false)
