@@ -1,5 +1,5 @@
 import React from 'react'
-import Card from '../modal/Card'
+import Card from '../utils/Card'
 import NoteDate from './NoteDate'
 import { callButton } from './NoteButton'
 import { openForm, undoArchived, deleteNote, savedArchived } from '../utils/Toast'
@@ -23,11 +23,11 @@ const NoteDetail = ({
             <h3 className='card-title text-sm text-slate-100'>{title}</h3>
           </div>
         </div>
-        {handleEditNote && callButton(handleEditNote, '/icons8-edit-64.png', openForm, id)}
+        {handleEditNote && callButton(handleEditNote, '/privateNote-app/icons8-edit-64.png', openForm, id)}
         {onNoteToArchived &&
-          callButton(onNoteToArchived, '/icons8-product-documents-64.png', savedArchived, id)}
-        {onArchivedToNote && callButton(onArchivedToNote, '/icons8-notes-64.png', undoArchived, id)}
-        {handleDelete && callButton(handleDelete, '/icons8-close-64.png', deleteNote, id)}
+          callButton(onNoteToArchived, '/privateNote-app/icons8-product-documents-64.png', savedArchived, id)}
+        {onArchivedToNote && callButton(onArchivedToNote, '/privateNote-app/icons8-notes-64.png', undoArchived, id)}
+        {handleDelete && callButton(handleDelete, '/privateNote-app/icons8-close-64.png', deleteNote, id)}
       </div>
       <p className=' text-xs text-slate-100 break-all line-clamp-6 hover:line-clamp-none hover:ease-linear duration-300'>
         {body}

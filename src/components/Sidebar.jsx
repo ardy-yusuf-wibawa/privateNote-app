@@ -12,15 +12,15 @@ export default function Sidebar({ onOpen, setCurrentView }) {
   }
 
   const buttonData = [
-    { label: 'Create Icon', iconSrc: '/icons8-create-64.png', onClick: handleModal },
+    { label: 'Create Icon', iconSrc: '/privateNote-app/icons8-create-64.png', onClick: handleModal },
     {
       label: 'Notes Icon',
-      iconSrc: '/icons8-notes-64.png',
+      iconSrc: '/privateNote-app/icons8-notes-64.png',
       onClick: () => handleViewChange('Notes')
     },
     {
       label: 'Archived Icon',
-      iconSrc: '/icons8-product-documents-64.png',
+      iconSrc: '/privateNote-app/icons8-product-documents-64.png',
       onClick: () => handleViewChange('Archived')
     }
   ]
